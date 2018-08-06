@@ -1,8 +1,8 @@
 require 'sinatra' 
-require 'slim'
+require 'erb'
 
-get '/' do 
-  slim :index 
+get '/' do
+  erb :index
 end
 
 __END__
