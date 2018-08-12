@@ -1,0 +1,30 @@
+body {
+    background-color: #4f413f;
+    font-family: monospace;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: #010200;
+}
+
+p {
+    color: black;
+}
+
+.body {
+    background-color: #f1ede5;
+}
+
+.image {
+    width: 500px; 
+    height: 300px;
+}
