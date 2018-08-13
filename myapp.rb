@@ -1,13 +1,7 @@
 require 'sinatra'
 
 get '/' do
-    'Hello world!'
+    erb :index
   end
 
-  get '/home' do
-  erb :home
-end
 
-get '/index' do
-  erb :index
-end
