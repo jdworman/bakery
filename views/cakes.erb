@@ -5,61 +5,29 @@
 -we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
 
 
-<div class="container-grid">
-
-<div class="section1">
-<img src="images/strawberry.jpg">
-</div>
-<div class="section2">
-<img src="images/birthday.jpg">
-</div>
-<div class="section3">
-<img src="images/salted.jpg">
-</div>
-<div class="section4">
-<img src="images/choclate.jpg">
-</div>
-<div class="section5">
-<img src="images/velvet.jpg">
-</div>
-<div class="section6">
-<img src="images/carrot.jpeg">
-</div>
-<div class="section7">
-<img src="images/lemon.jpeg">
-</div>
-<div class="section8">
-<img src="images/joe-o.jpg">
-</div>
-<div class="section9">
-<img src="images/leches.jpeg">
-</div>
-</div>
-
 <% cakes =
 [['images/strawberry.jpg', 'Strawberry Cake', '39.50', 'This is a strawberry cake.'],
 ['images/birthday.jpg', 'Birthday Cake', '39.50', 'This is a birthday cake.'],
 ['images/salted.jpg', 'Salted Caramel Cake', '39.50', 'This is a salted caramel cake.'],
 ['images/choclate.jpg', 'Choclate Cake', '39.50', 'This is a choclate cake.'],
-['images/velvet.jpeg', 'Red Velvet Cake', '39.50', 'This is a red velvet cake.'],
+['images/velvet.jpg', 'Red Velvet Cake', '39.50', 'This is a red velvet cake.'],
 ['images/carrot.jpeg', 'Carrot Cake', '39.50', 'This is a carrot cake.'],
 ['images/lemon.jpeg', 'Lemon Cake', '39.50', 'This is a lemon cake.'],
-['images/joe-o.jpeg', 'Joe-O-Cookie Cake', '39.50', 'This is a Joe-O-Cookie cake.'],
+['images/joe-o.jpg', 'Joe-O-Cookie Cake', '39.50', 'This is a Joe-O-Cookie cake.'],
 ['images/leches.jpeg', 'Tres Leches Cake', '39.50', 'This is a tres leches cake.']]
 %>
 
  <div class="container">
- <% cakes.each do |cakes| %>
- <% img = cakes[0] %>
- <% name = cakes[1] %>
- <% price = cakes[3] %>
- <% description = cakes[2] %>
- <% puts name %>
- <% end %>
-</div>
+ <% cakes.each do |cake| %>
+ <% img = cake[0] %>
+ <% name = cake[1] %>
+ <% price = cake[2] %>
+ <% description = cake[3] %>
  <div class="item">
 <img src="<%= img %>">
 <h2><%= name %></h2>
 <h3><%= description %><h3>
 <h3><%= price %><h3>
  </div>
+<% end %>
+</div>

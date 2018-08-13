@@ -1,5 +1,6 @@
 /* Body
 ================================= */
+
 body {
   background-color: #2a2a2e;
 }
@@ -13,160 +14,49 @@ h2 {
 }
 
 h3 {
-  color: #2a2a2e;
+  /* color: #2a2a2e; */
 }
 
 h4 {
-  color: #2a2a2e;
+  /* color: #2a2a2e; */
 }
-
 
 /* Navigation section
 ================================= */
-#navbar ul{
-    padding: 5px;
-    list-style-type: center;
-    text-align: center;
-    background-color: none;
-    margin: 10px;
-    border-radius: 5px;
-  }
 
-  #navbar ul li {
+#navbar ul {
+  padding: 5px;
+  list-style-type: center;
+  text-align: center;
+  background-color: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#navbar ul li {
   display: inline;
-  }
+}
 
-  #navbar ul li a {
+#navbar ul li a {
   text-decoration: none;
   font-family: Arial;
   padding: .2em 1em;
   color: #fff;
   background-color: none;
-  }
+}
 
-  #navbar ul li a:hover {
-    color: none;
-    background-color: #fff;
-  }
+#navbar ul li a:hover {
+  color: none;
+  background-color: #fff;
+}
 
-  .container-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-  }
+.container {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  text-align: center;
+}
 
-  .section1{
-    grid-column: 1;
-    grid-row: 1;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section2{
-    grid-column: 2;
-    grid-row: 1;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section3{
-    grid-column: 3;
-    grid-row: 1;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section4{
-    grid-column: 1;
-    grid-row: 6;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section5 {
-    grid-column: 2;
-    grid-row: 6;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section6 {
-    grid-column: 3;
-    grid-row: 6;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section7 {
-    grid-column: 1;
-    grid-row: 11;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section8 {
-    grid-column: 2;
-    grid-row: 11;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section9 {
-    grid-column: 3;
-    grid-row: 11;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .section1 img {
-   max-height: 350px;
-   width: auto;
- }
- .section2 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section3 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section4 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section5 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section6 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section7 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section8 img {
-   max-height: 350px;
-   width: auto;
- }
-
- .section9 img {
-   max-height: 350px;
-   width: auto;
- }
+img {
+  width: 300px;
+  height: auto;
+}
