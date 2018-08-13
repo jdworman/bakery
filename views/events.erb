@@ -1,0 +1,7 @@
+<% @req['events'].each do |x| %>
+
+ <%= x['name']['text'] %>
+
+ <%= x['description']['text'] %>
+<img src="<%= x['logo']['url']%>">
+<% end %>
