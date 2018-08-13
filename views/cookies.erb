@@ -1,1 +1,31 @@
- 
+<h1>CELEBRATE YOUR MILESTONES WITH US</h1>
+<h2>Here at the Joe's High Rise Bakery, cakes aren't just cakes.  It's a milestone birthday, graduation, a wedding celebration.  We don't take your brightest moments lightly<br>
+-we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
+
+
+<% cookies =
+[['images/sprinkle.png', 'Sprinkle Cookie', '2.50', 'This is a sprinkle cookie.'],
+['images/oatmeal.png', 'Oatmeal Cookie', '2.50', 'This is a oatmeal cookie.'],
+['images/linzer.png', 'Linzer Tart', '2.50', 'This is a linzer tart.'],
+['images/macaroon.png', 'Macaroon Cookie', '2.50', 'This is a macaroon cookie.'],
+['images/half-dipped.png', 'Choclate Chip Half Dipped Cookie', '2.50', 'This is a choclate chip half dipped cookie.'],
+['images/tarts.png', 'Choclate Tart', '2.50', 'This is a choclate tart.'],
+['images/candy.png', 'Candy Cookie', '2.50', 'This is a candy cookie.'],
+['images/choclate-chip.png', 'Choclate Chip Cookie', '2.50', 'This is a choclate chip cookie.'],
+['images/black-white.png', 'Black and White', '2.50', 'This is a black and white cookie.']]
+%>
+
+ <div class="container">
+ <% cookies.each do |cookie| %>
+ <% img = cookie[0] %>
+ <% name = cookie[1] %>
+ <% price = cookie[2] %>
+ <% description = cookie[3] %>
+ <div class="item">
+<img src="<%= img %>">
+<h2><%= name %></h2>
+<h3><%= description %><h3>
+<h3><%= price %><h3>
+ </div>
+<% end %>
+</div>

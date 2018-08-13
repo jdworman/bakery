@@ -2,7 +2,11 @@
 ================================= */
 
 body {
-  background-color: #2a2a2e;
+     background-image: url("images/background.jpeg");
+     background-position: left;
+ background-attachment: fixed;
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 
 h1 {

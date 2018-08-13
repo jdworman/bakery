@@ -1,0 +1,31 @@
+<h1>CELEBRATE YOUR MILESTONES WITH US</h1>
+<h2>Here at the Joe's High Rise Bakery, cakes aren't just cakes.  It's a milestone birthday, graduation, a wedding celebration.  We don't take your brightest moments lightly<br>
+-we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
+
+
+<% muffins =
+[['images/pistachio.png', 'Pistachio Yogurt Muffin', '7.50', 'This is a pistachio yogurt muffin.'],
+['images/rasberry-almond.png', 'Rasberry Almond Yogurt Muffin', '7.50', 'This is a rasberry almond yogurt muffin.'],
+['images/dutch.png', 'Dutch Chip Yogurt Muffin', '7.50', 'This is a dutch chip yogurt muffin.'],
+['images/cinnamon.png', 'Cinnamon Walnut Yogurt Muffin', '7.50', 'This is a cinnamon walnut yogurt muffin.'],
+['images/lemon-poppy.png', 'Lemon Poppy Yogurt Muffin', '7.50', 'This is a lemon yogurt muffin.'],
+['images/ivory.png', 'Ivory Choclate Chip Yougurt Muffin', '7.50', 'This is a choclate chip yogurt muffin.'],
+['images/crunch.png', 'Marble Crunch Yougurt Muffin', '7.50', 'This is a marble crunch yogurt muffin.'],
+['images/orange.png', 'Orange Cranberry Yogurt Muffin', '7.50', 'This is an orange cranberry yogurt muffin.'],
+['images/pumpkin.png', 'Pumpkin Yogurt Muffin', '7.50', 'This is a pumpkin yogurt muffin.']]
+%>
+
+ <div class="container">
+ <% muffins.each do |muffin| %>
+ <% img = muffin[0] %>
+ <% name = muffin[1] %>
+ <% price = muffin[2] %>
+ <% description = muffin[3] %>
+ <div class="item">
+<img src="<%= img %>">
+<h2><%= name %></h2>
+<h3><%= description %><h3>
+<h3><%= price %><h3>
+ </div>
+<% end %>
+</div>
