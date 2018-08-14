@@ -7,6 +7,7 @@ body {
   color: #ffcb04;
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.7), black), url("images/background.jpeg");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no repeat;
   background-size: cover;
 }
@@ -64,6 +65,15 @@ h6 {
   font-size: 50px;
 }
 
+p {
+  color: floralwhite;
+  justify-content: center;
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px black;
+}
+
 a {
   color: #fff;
 }
@@ -117,6 +127,18 @@ img {
   padding: 20px; 
 }
 
+ 
+ /* Events Page
+================================= */
+.events  {
+ color: yellow;
+}
+
+.event-image {
+  height: 200px;
+  width: auto; 
+}
+
 /* Form
 ================================= */
 input[type=text], select, textarea {
@@ -160,7 +182,7 @@ input[type=submit]:hover {
   width: auto;   
 }
 
-* Footer section
+/* Footer Section
 ================================= */
 
 #footer {
@@ -198,4 +220,3 @@ display: inline;
   min-height: calc(50vh - 140px);
   padding: 40px 40px 0 40px;
  }
- 

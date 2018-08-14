@@ -3,10 +3,18 @@
 
 <h5>Events</h5>
 </div>
+
+
 <% @req['events'].each do |x| %>
+<div class="events"> 
+<div class="event-image">
+<img src="<%= x['logo']['url']%>">
+</div>
 
  <%= x['name']['text'] %>
 
  <%= x['description']['text'] %>
-<img src="<%= x['logo']['url']%>">
+
+</div>
 <% end %>
+ 
