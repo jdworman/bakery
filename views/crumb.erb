@@ -1,31 +1,35 @@
 <div class="main">
-  <section id="cakes" class="top-content">
+  <section id="crumb" class="top-content">
 
-<h1>Cakes</h1>
+<h1>Crumbs</h1>
 </div>
-<h1>CELEBRATE YOUR MILESTONES WITH US</h1>
+
+
+<h1>CELEBRATE YOUR MILE
+
+  STONES WITH US</h1>
 <h2>Here at the Joe's High Rise Bakery, cakes aren't just cakes.  It's a milestone birthday, graduation, a wedding celebration.  We don't take your brightest moments lightly<br>
 -we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
 
 
-<% cakes =
-[['images/strawberry.jpg', 'Strawberry Cake', '39.50', 'This is a strawberry cake.'],
-['images/birthday.jpg', 'Birthday Cake', '39.50', 'This is a birthday cake.'],
-['images/salted.jpg', 'Salted Caramel Cake', '39.50', 'This is a salted caramel cake.'],
-['images/choclate.jpg', 'Choclate Cake', '39.50', 'This is a choclate cake.'],
-['images/velvet.jpg', 'Red Velvet Cake', '39.50', 'This is a red velvet cake.'],
-['images/carrot.jpeg', 'Carrot Cake', '39.50', 'This is a carrot cake.'],
-['images/lemon.jpeg', 'Lemon Cake', '39.50', 'This is a lemon cake.'],
-['images/joe-o.jpg', 'Joe-O-Cookie Cake', '39.50', 'This is a Joe-O-Cookie cake.'],
-['images/leches.jpeg', 'Tres Leches Cake', '39.50', 'This is a tres leches cake.']]
+<% crumbs =
+[['images/oreo-d.png', 'Oreo Delight', '9.50', 'This is an oreo delight.'],
+['images/pbb.png', 'Peanut Butter Brownie', '9.50', 'This is a peanut butter brownie.'],
+['images/crumb.png', 'Crumb Cake', '9.50', 'This is a crumb cake.'],
+['images/apple.png', 'Apple Crumb', '9.50', 'This is an apple crumb.'],
+['images/blondie.png', 'Blondie', '9.50', 'This is a blondie.'],
+['images/blueberry.png', 'Blueberry Crumb', '9.50', 'This is a blueberry crumb.'],
+['images/banana.png', 'Banana Frosted', '9.50', 'This is a banana frosted.'],
+['images/carmel.png', 'Apple Caramel', '9.50', 'This is an apple caramel.'],
+['images/german.png', 'German Butter', '9.50', 'This is a german butter.']]
 %>
 
  <div class="container">
- <% cakes.each do |cake| %>
- <% img = cake[0] %>
- <% name = cake[1] %>
- <% price = cake[2] %>
- <% description = cake[3] %>
+ <% crumbs.each do |crumb| %>
+ <% img = crumb[0] %>
+ <% name = crumb[1] %>
+ <% price = crumb[2] %>
+ <% description = crumb[3] %>
  <div class="item">
 <img src="<%= img %>">
 <h2><%= name %></h2>

@@ -1,7 +1,7 @@
 <div class="main">
-  <section id="cookies" class="top-content">
+  <section id="pastries" class="top-content">
 
-<h1>Cookies</h1>
+<h1>Pastries</h1>
 </div>
 
 
@@ -12,24 +12,24 @@
 -we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
 
 
-<% cookies =
-[['images/sprinkle.png', 'Sprinkle Cookie', '2.50', 'This is a sprinkle cookie.'],
-['images/oatmeal.png', 'Oatmeal Cookie', '2.50', 'This is a oatmeal cookie.'],
-['images/linzer.png', 'Linzer Tart', '2.50', 'This is a linzer tart.'],
-['images/macaroon.png', 'Macaroon Cookie', '2.50', 'This is a macaroon cookie.'],
-['images/half-dipped.png', 'Choclate Chip Half Dipped Cookie', '2.50', 'This is a choclate chip half dipped cookie.'],
-['images/tarts.png', 'Choclate Tart', '2.50', 'This is a choclate tart.'],
-['images/candy.png', 'Candy Cookie', '2.50', 'This is a candy cookie.'],
-['images/choclate-chip.png', 'Choclate Chip Cookie', '2.50', 'This is a choclate chip cookie.'],
-['images/black-white.png', 'Black and White', '2.50', 'This is a black and white cookie.']]
+<% pastries =
+[['images/pineapple.png', 'Pineapple Danish Pocket', '12.50', 'This is a pineapple danish pocket.'],
+['images/cherry.png', 'Cherry Danish Pocket', '12.50', 'This is a cherry danish pocket.'],
+['images/lemon-p.png', 'Lemon Danish Pocket', '12.50', 'This is a lemon danish pocket.'],
+['images/blueberry-p.png', 'Blueberry Danish Pocket', '12.50', 'This is a blueberry danish pocket.'],
+['images/apple-p.png', 'Apple Danish Pocket', '12.50', 'This is an apple danish pocket.'],
+['images/lemon-d.png', 'Lemon Danish Round', '12.50', 'This is a lemon danish round.'],
+['images/cheese.png', 'Cheese Danish Round', '12.50', 'This is a chesse danish round.'],
+['images/apple-t.png', 'Apple Turnover', '12.50', 'This is an apple turnover.'],
+['images/cinnamon-s.png', 'Cinnamon Swirl', '12.50', 'This is a cinamon swirl.']]
 %>
 
  <div class="container">
- <% cookies.each do |cookie| %>
- <% img = cookie[0] %>
- <% name = cookie[1] %>
- <% price = cookie[2] %>
- <% description = cookie[3] %>
+ <% pastries.each do |pastrie| %>
+ <% img = pastrie[0] %>
+ <% name = pastrie[1] %>
+ <% price = pastrie[2] %>
+ <% description = pastrie[3] %>
  <div class="item">
 <img src="<%= img %>">
 <h2><%= name %></h2>

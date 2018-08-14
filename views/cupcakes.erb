@@ -8,7 +8,7 @@
 -we celebrate the best way we can: with our finest choclates, our sweetest strawberries, and our most colorful sprinkles we can find.</h2>
 
 
-<% cakes =
+<% cupcakes =
 [['images/rocky.png', 'Rocky Road Cupcake', '7.50', 'This is a rocky road cupcake.'],
 ['images/oreo.png', 'Orep Cupcake', '7.50', 'This is an orea cupcake.'],
 ['images/peanut.png', 'Peanut Butter Cupcake', '7.50', 'This is a peanut butter cupcake.'],
@@ -21,11 +21,11 @@
 %>
 
  <div class="container">
- <% cakes.each do |cake| %>
- <% img = cake[0] %>
- <% name = cake[1] %>
- <% price = cake[2] %>
- <% description = cake[3] %>
+ <% cupcakes.each do |cupcake| %>
+ <% img = cupcake[0] %>
+ <% name = cupcake[1] %>
+ <% price = cupcake[2] %>
+ <% description = cupcake[3] %>
  <div class="item">
 <img src="<%= img %>">
 <h2><%= name %></h2>
