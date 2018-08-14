@@ -1,7 +1,6 @@
 <h5>Muffins</h5>
 <h6>Start your morning off right!</h6>
 
-
 <% muffins =
 [['images/pistachio.png', 'Pistachio Yogurt Muffin', '7.50', 'Green with envy!'],
 ['images/rasberry-almond.png', 'Rasberry Almond Yogurt Muffin', '7.50', 'Berries and nuts!'],
@@ -14,17 +13,18 @@
 ['images/pumpkin.png', 'Pumpkin Yogurt Muffin', '7.50', 'It\'s like a pumpkin latte.']]
 %>
 
- <div class="container">
- <% muffins.each do |muffin| %>
- <% img = muffin[0] %>
- <% name = muffin[1] %>
- <% price = muffin[2] %>
- <% description = muffin[3] %>
- <div class="item">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+  <div class="container">
+    <% muffins.each do |muffin| %>
+      <% img = muffin[0] %>
+        <% name = muffin[1] %>
+          <% price = muffin[2] %>
+            <% description = muffin[3] %>
+              <div class="item">
+                <img src="<%= img %>">
+                <h2><%= name %></h2>
+                <h3><%= description %>
+                  <h3>
+                    <h3><%= price %>
+                      <h3></div>
+                    <% end %>
+                  </div>

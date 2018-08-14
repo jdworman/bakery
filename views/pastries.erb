@@ -1,7 +1,6 @@
 <h5>Pastries</h5>
 <h6>All our fruits in our pastries are organically grown!</h6>
 
-
 <% pastries =
 [['images/pineapple.png', 'Pineapple Danish Pocket', '12.50', 'Spngebob loves this danish.'],
 ['images/cherry.png', 'Cherry Danish Pocket', '12.50', 'It\'s like a mini pie.'],
@@ -14,17 +13,18 @@
 ['images/cinnamon-s.png', 'Cinnamon Swirl', '12.50', 'Swirl! Swirl! Swirl!']]
 %>
 
- <div class="container">
- <% pastries.each do |pastrie| %>
- <% img = pastrie[0] %>
- <% name = pastrie[1] %>
- <% price = pastrie[2] %>
- <% description = pastrie[3] %>
- <div class="item">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+  <div class="container">
+    <% pastries.each do |pastrie| %>
+      <% img = pastrie[0] %>
+        <% name = pastrie[1] %>
+          <% price = pastrie[2] %>
+            <% description = pastrie[3] %>
+              <div class="item">
+                <img src="<%= img %>">
+                <h2><%= name %></h2>
+                <h3><%= description %>
+                  <h3>
+                    <h3><%= price %>
+                      <h3></div>
+                    <% end %>
+                  </div>
