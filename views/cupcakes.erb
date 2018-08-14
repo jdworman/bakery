@@ -1,6 +1,5 @@
 <h5>Cupcakes</h5>
 <h6>A sweet for a sweet!</h6>
- 
 
 <% cupcakes =
 [['images/rocky.png', 'Rocky Road Cupcake', '7.50', 'An ice-cream flavor in a cupcake!'],
@@ -14,17 +13,18 @@
 ['images/kiss.png', 'Choclate Kiss Sprinkle Cupcake', '7.50', 'Our best selling cupcake.']]
 %>
 
- <div class="container">
- <% cupcakes.each do |cupcake| %>
- <% img = cupcake[0] %>
- <% name = cupcake[1] %>
- <% price = cupcake[2] %>
- <% description = cupcake[3] %>
- <div class="item">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+  <div class="container">
+    <% cupcakes.each do |cupcake| %>
+      <% img = cupcake[0] %>
+        <% name = cupcake[1] %>
+          <% price = cupcake[2] %>
+            <% description = cupcake[3] %>
+              <div class="item">
+                <img src="<%= img %>">
+                <h2><%= name %></h2>
+                <h3><%= description %>
+                  <h3>
+                    <h3><%= price %>
+                      <h3></div>
+                    <% end %>
+                  </div>
