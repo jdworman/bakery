@@ -18,6 +18,19 @@ get '/muffins' do
   erb :muffins
 end
 
+
+get '/cupcakes' do
+  erb :cupcakes
+end
+
+get '/crumb' do
+  erb :crumb
+end
+
+get '/pastries' do
+  erb :pastries
+end
+
 get '/events' do
   @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=date&location.address=new+york+city&token=3ZHGTKVD5QVB35RMZTBF")
   @req = JSON.parse(@data.body_str)
