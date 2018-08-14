@@ -3,8 +3,8 @@ require 'curb'
 require 'json'
 
 get '/' do
-    erb :index
-  end
+  erb :index
+end
 
 get '/cookies' do
   erb :cookies
@@ -17,7 +17,6 @@ end
 get '/muffins' do
   erb :muffins
 end
-
 
 get '/cupcakes' do
   erb :cupcakes
