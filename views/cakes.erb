@@ -1,22 +1,18 @@
-<div class="main">
-  <section id="cakes" class="top-content">
-
 <h5>Cakes</h5>
-</div>
 <h6>Celebrate your milestone with us!</h6p>
 
 
 
 <% cakes =
-[['images/strawberry.jpg', 'Strawberry Cake', '39.50', 'This is a strawberry cake.'],
-['images/birthday.jpg', 'Birthday Cake', '39.50', 'This is a birthday cake.'],
-['images/salted.jpg', 'Salted Caramel Cake', '39.50', 'This is a salted caramel cake.'],
-['images/choclate.jpg', 'Choclate Cake', '39.50', 'This is a choclate cake.'],
-['images/velvet.jpg', 'Red Velvet Cake', '39.50', 'This is a red velvet cake.'],
-['images/carrot.jpeg', 'Carrot Cake', '39.50', 'This is a carrot cake.'],
-['images/lemon.jpeg', 'Lemon Cake', '39.50', 'This is a lemon cake.'],
-['images/joe-o.jpg', 'Joe-O-Cookie Cake', '39.50', 'This is a Joe-O-Cookie cake.'],
-['images/leches.jpeg', 'Tres Leches Cake', '39.50', 'This is a tres leches cake.']]
+[['images/strawberry.jpg', 'Strawberry Cake', '39.50', 'The strawberries are hand picked by our employees.'],
+['images/birthday.jpg', 'Birthday Cake', '39.50', 'Add some sprinkles and go celebrate!'],
+['images/salted.jpg', 'Salted Caramel Cake', '39.50', 'Add a little salt and a lot of caramel.'],
+['images/choclate.jpg', 'Choclate Cake', '39.50', 'Warning: Not for diabetics.'],
+['images/velvet.jpg', 'Red Velvet Cake', '39.50', 'This is as red as your heart.'],
+['images/carrot.jpeg', 'Carrot Cake', '39.50', 'Bugs Bunny gave us rave reviews for this cake.'],
+['images/lemon.jpeg', 'Lemon Cake', '39.50', 'A little sweet and whole lot of sour!'],
+['images/joe-o.jpg', 'Joe-O-Cookie Cake', '39.50', 'This is the richest cholcate in all of New York'],
+['images/leches.jpeg', 'Tres Leches Cake', '39.50', 'Warning: Not for laktoseintolerant.']]
 %>
 
  <div class="container">
@@ -25,7 +21,7 @@
  <% name = cake[1] %>
  <% price = cake[2] %>
  <% description = cake[3] %>
- <div class="item">
+ <div class="item cake">
 <img src="<%= img %>">
 <h2><%= name %></h2>
 <h3><%= description %><h3>
