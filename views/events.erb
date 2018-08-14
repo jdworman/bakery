@@ -1,20 +1,19 @@
 <div class="main">
   <section id="events" class="top-content">
 
-<h5>Events</h5>
-</div>
+    <h5>Events</h5>
+  </div>
 
+  <% @req['events'].each do |x| %>
+    <div class="combine">
+      <div class="events">
+        <div class="event-image">
+          <img src="<%= x['logo']['url']%>">
+        </div>
+        <%= x['name']['text'] %>
+      </div>
+      <%= x['description']['text'] %>
+    </div>
 
-<% @req['events'].each do |x| %>
-<div class="events"> 
-<div class="event-image">
-<img src="<%= x['logo']['url']%>">
-</div>
-
- <%= x['name']['text'] %>
-
- <%= x['description']['text'] %>
-
-</div>
+  </div>
 <% end %>
- 

@@ -51,7 +51,7 @@ h5 {
   text-align: center;
   font-family: cursive;
   text-decoration: underline;
-  text-decoration-color: #ffcb04;  
+  text-decoration-color: #ffcb04;
   font-size: 50px;
   text-shadow: 2px 2px 2px black;
   margin: -70px;
@@ -80,6 +80,11 @@ a {
 
 a:visited {
   color: #fff;
+}
+
+.address {
+  color: floralwhite;
+  text-align: right;
 }
 /* Navigation section
 ================================= */
@@ -124,34 +129,47 @@ img {
   height: auto;
   background-position: left top;
   background-repeat: repeat;
-  padding: 20px; 
+  padding: 20px;
 }
 
- 
+
  /* Events Page
 ================================= */
 .events  {
- color: yellow;
+   opacity: 0.5;
 }
 
 .event-image {
   height: 200px;
-  width: auto; 
+  width: auto;
+  align-content: right;
+  margin: 0;
+  padding: 0;
 }
+
+.combine {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: inherit;
+  margin: 80px;
+  background-color: #2a2a2e;
+  color: floralwhite;
+}
+
 
 /* Form
 ================================= */
 input[type=text], select, textarea {
-  width: 100%;  
-  padding: 12px;   
-  border: 1px solid #ccc;  
-  border-radius: 4px; 
-  box-sizing: border-box;  
-  margin-top: 6px; 
-  margin-bottom: 16px; 
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
   resize: vertical;
-}  
- 
+}
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -179,7 +197,7 @@ input[type=submit]:hover {
   display: flex;
   justify-content: center;
   height: 200px;
-  width: auto;   
+  width: auto;
 }
 
 /* Footer Section
