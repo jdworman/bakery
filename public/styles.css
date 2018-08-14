@@ -1,7 +1,6 @@
 /* Body
 ================================= */
 
-
 body {
   background-color: #2a2a2e;
   color: #ffcb04;
@@ -92,6 +91,7 @@ a:visited {
   color: floralwhite;
   text-align: right;
 }
+
 /* Navigation section
 ================================= */
 
@@ -123,6 +123,7 @@ a:visited {
 
 /* Grids
 ================================= */
+
 .container {
   display: grid;
   grid-template: auto / auto auto auto;
@@ -140,11 +141,17 @@ img {
   margin: 3px;
 }
 
+.cake {
+  text-align: center;
+  padding: 5px;
+  margin: 6px;
+}
 
- /* Events Page
+/* Events Page
 ================================= */
-.events  {
-   opacity: 0.5;
+
+.events {
+  opacity: 0.5;
 }
 
 .event-image {
@@ -164,9 +171,9 @@ img {
   color: floralwhite;
 }
 
-
 /* Images
 ================================= */
+
 .image1 {
   margin-bottom: -230px;
   display: flex;
@@ -179,6 +186,8 @@ img {
 ================================= */
 
 #footer {
+  width: 1500px;
+  height: 100px;
   margin: 10px;
   height: 60px;
   border-radius: 5px;
@@ -188,13 +197,8 @@ img {
   font-size: 90%;
 }
 
-#footer {
-  width: 300px;
-  height: 100px;
-}
-
-#footer ul{
-  padding: 5px;
+#footer ul {
+  padding-top: 225px;
   list-style-type: center;
   text-align: center;
   margin: 10px;
@@ -202,20 +206,10 @@ img {
 }
 
 #footer ul li {
-display: inline;
+  display: inline;
 }
 
 #footer ul li a:hover {
   color: #fff;
   background-color: #e7a614;
 }
-.allcontent {
-  min-height: calc(50vh - 140px);
-  padding: 40px 40px 0 40px;
- }
-
- .cake {
-  text-align: center;
-  padding: 5px;
-  margin: 6px;
- }

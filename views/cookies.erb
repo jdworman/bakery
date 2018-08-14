@@ -1,10 +1,8 @@
 <div class="main">
-<h5>Cookies</h5>
-<h6>A cookie a day keeps you smiling all day!</h6>
- 
- 
- 
-<% cookies =
+  <h5>Cookies</h5>
+  <h6>A cookie a day keeps you smiling all day!</h6>
+
+  <% cookies =
 [['images/sprinkle.png', 'Sprinkle Cookie', '2.50', 'This cookie is raining with sprinkles.'],
 ['images/oatmeal.png', 'Oatmeal Cookie', '2.50', 'This cookie is perfect for dunking in milk.'],
 ['images/linzer.png', 'Linzer Tart', '2.50', 'So buttery, but not so sweet.'],
@@ -16,17 +14,18 @@
 ['images/black-white.png', 'Black and White', '2.50', 'A yin to your yang!']]
 %>
 
- <div class="container">
- <% cookies.each do |cookie| %>
- <% img = cookie[0] %>
- <% name = cookie[1] %>
- <% price = cookie[2] %>
- <% description = cookie[3] %>
- <div class="item">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+    <div class="container">
+      <% cookies.each do |cookie| %>
+        <% img = cookie[0] %>
+          <% name = cookie[1] %>
+            <% price = cookie[2] %>
+              <% description = cookie[3] %>
+                <div class="item">
+                  <img src="<%= img %>">
+                  <h2><%= name %></h2>
+                  <h3><%= description %>
+                    <h3>
+                      <h3><%= price %>
+                        <h3></div>
+                      <% end %>
+                    </div>

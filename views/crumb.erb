@@ -1,8 +1,6 @@
 <h5>Crumb Cakes</h5>
 <h6>Add some crumb to your coffee!</h6>
 
-
-
 <% crumbs =
 [['images/oreo-d.png', 'Oreo Delight', '9.50', 'The name says it all!'],
 ['images/pbb.png', 'Peanut Butter Brownie', '9.50', 'Peanutty, Buttery, Delious!'],
@@ -15,17 +13,18 @@
 ['images/german.png', 'German Butter', '9.50', 'Hand deleivered from Germany.']]
 %>
 
- <div class="container">
- <% crumbs.each do |crumb| %>
- <% img = crumb[0] %>
- <% name = crumb[1] %>
- <% price = crumb[2] %>
- <% description = crumb[3] %>
- <div class="item">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+  <div class="container">
+    <% crumbs.each do |crumb| %>
+      <% img = crumb[0] %>
+        <% name = crumb[1] %>
+          <% price = crumb[2] %>
+            <% description = crumb[3] %>
+              <div class="item">
+                <img src="<%= img %>">
+                <h2><%= name %></h2>
+                <h3><%= description %>
+                  <h3>
+                    <h3><%= price %>
+                      <h3></div>
+                    <% end %>
+                  </div>

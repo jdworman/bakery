@@ -1,7 +1,5 @@
 <h5>Cakes</h5>
-<h6>Celebrate your milestone with us!</h6p>
-
-
+<h6>Celebrate your milestone with us!</h6>
 
 <% cakes =
 [['images/strawberry.jpg', 'Strawberry Cake', '39.50', 'The strawberries are hand picked by our employees.'],
@@ -15,17 +13,18 @@
 ['images/leches.jpeg', 'Tres Leches Cake', '39.50', 'Warning: Not for laktoseintolerant.']]
 %>
 
- <div class="container">
- <% cakes.each do |cake| %>
- <% img = cake[0] %>
- <% name = cake[1] %>
- <% price = cake[2] %>
- <% description = cake[3] %>
- <div class="item cake">
-<img src="<%= img %>">
-<h2><%= name %></h2>
-<h3><%= description %><h3>
-<h3><%= price %><h3>
- </div>
-<% end %>
-</div>
+  <div class="container">
+    <% cakes.each do |cake| %>
+      <% img = cake[0] %>
+        <% name = cake[1] %>
+          <% price = cake[2] %>
+            <% description = cake[3] %>
+              <div class="item cake">
+                <img src="<%= img %>">
+                <h2><%= name %></h2>
+                <h3><%= description %>
+                  <h3>
+                    <h3><%= price %>
+                      <h3></div>
+                    <% end %>
+                  </div>
