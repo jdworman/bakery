@@ -37,6 +37,6 @@ get '/events' do
   erb :events
 end
 
-get '/contact' do
-  erb :contact
+get '/about' do
+  erb :about
 end

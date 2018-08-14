@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  color: floralwhite;
+  color: yellow;
   justify-content: center;
   text-align: center;
   font-family: cursive;
@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-  color: floralwhite;
+  color: yellow;
   justify-content: center;
   text-align: center;
   font-family: cursive;
@@ -49,7 +49,11 @@ h5 {
   justify-content: center;
   text-align: center;
   font-family: cursive;
-  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #ffcb04;  
+  font-size: 50px;
+  text-shadow: 2px 2px 2px black;
+  margin: -70px;
 }
 
 h6 {
@@ -60,6 +64,13 @@ h6 {
   font-size: 50px;
 }
 
+a {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
 /* Navigation section
 ================================= */
 
@@ -151,8 +162,8 @@ input[type=submit]:hover {
 
 * Footer section
 ================================= */
+
 #footer {
-  background-color: #e7a614;
   margin: 10px;
   height: 60px;
   border-radius: 5px;
@@ -181,6 +192,10 @@ display: inline;
 
 #footer ul li a:hover {
   color: #fff;
-  background-color: ##000;
-
+  background-color: #e7a614;
 }
+.allcontent {
+  min-height: calc(50vh - 140px);
+  padding: 40px 40px 0 40px;
+ }
+ 
