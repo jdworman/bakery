@@ -6,3 +6,5 @@ I created a fullstack bakery that displays cookies, cakes, muffins, cupcakes, cr
 - I got all my other bakery items from [Harvest Bakery](http://harvestbakery.com/).
 - I got my API from [Event Brite](https://www.eventbrite.com/u/175066008455/).
 - Also, I got my background image from a google search.
+
+![desktop](images/Joe High-Rise Bakery.gif)
