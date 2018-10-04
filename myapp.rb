@@ -5,7 +5,7 @@ require 'json'
 get '/' do
   erb :index
 end
-
+ 
 get '/cookies' do
   erb :cookies
 end
