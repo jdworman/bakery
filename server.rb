@@ -5,7 +5,7 @@ require 'json'
 get '/' do
   erb :index
 end
- 
+
 get '/cookies' do
   erb :cookies
 end
@@ -31,7 +31,8 @@ get '/pastries' do
 end
 
 get '/events' do
-  @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=-date&location.address=new+york+city&token=#{ENV['API_TOKEN']}")
+  @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search//?q=baking&location.address=NYC&token=FGEP6NNCU7VUSAEVJS4Z")
+  # @data = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?q=baking&sort_by=-date&location.address=new+york+city&token=#{ENV['API_TOKEN']}")
   @req = JSON.parse(@data.body_str)
   erb :events
 end
